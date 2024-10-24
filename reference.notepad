@@ -1,0 +1,29 @@
+
+menuItems.forEach(item =>{
+    item.addEventListener('click', () =>{
+        changeActiveItems();
+        item.classList.add('active');
+        if(item.id != 'notifictions'){
+            document.querySelector('.notifictions-popup').
+            style.display = 'none';
+        } else{
+            document.querySelector('.notifictions-popup').
+            style.display='block';
+            document.querySelector('#notifications . notification-count').style.display='none';
+        }
+    })
+})
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        changeActiveItems();
+        item.classList.add('active');
+        if (item.id !== 'notifications') {
+            document.querySelector('.notifications-popup').style.display = 'none';
+        } else {
+            document.querySelector('.notifications-popup').style.display = 'block';
+            document.querySelector('#notifications .notification-count').style.display = 'none';
+        }
+    });
+});
+=============================================================
+
